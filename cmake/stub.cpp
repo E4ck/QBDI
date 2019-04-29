@@ -1,8 +1,9 @@
 /*
  * This stub is used to export QBDI as a dynamic library.
  */
-#define _QBDI_FORCE_C 1
 #include <QBDI.h>
+#include <QBDI/VM_C.h>
+#include <QBDI/Memory.h>
 
 #include <stddef.h>
 #ifdef QBDI_OS_WIN
