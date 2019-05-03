@@ -27,7 +27,7 @@ class HostPCRel : public RelocatableInst, public AutoAlloc<RelocatableInst, Host
     rword        offset;
 
 public:
-  HostPCRel(llvm::MCInst inst, unsigned int opn, rword offset)
+    HostPCRel(llvm::MCInst inst, unsigned int opn, rword offset)
         : RelocatableInst(inst), opn(opn), offset(offset) {};
 
     llvm::MCInst reloc(ExecBlock *exec_block) {
