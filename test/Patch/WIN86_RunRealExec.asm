@@ -26,13 +26,15 @@ PUBLIC runRealExec
 .CODE
 
 runRealExec PROC
-    mov eax, [esp+4];
-    mov ecx, [esp+8];
+    push ebp;
+    mov ebp, esp;
     pushad;
-    push ecx;
+    mov eax, [ebp+8];
+    mov edi, [ebp+12];
     call eax;
-    add esp, 4;
     popad;
+    mov esp, ebp;
+    pop ebp;
     ret;
 runRealExec ENDP
 
