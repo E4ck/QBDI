@@ -35,9 +35,9 @@ Status
 CPU       Operating Systems       Execution                Memory Access Information
 =======   =====================   ======================   =================================
 x86-64    Linux, macOS, Windows   :green:`Supported`       :yellow:`Partial (only non SIMD)`
+x86       Linux, macOS, Windows   :orange:`Early`          :orange:`Partial Early (only non SIMD)`
 ARM       Linux, Android, iOS     :yellow:`Partial`        :red:`Unsupported`
 AArch64   Linux, Android          :red:`Unsupported`       :red:`Unsupported`
-x86       Linux, macOS, Windows   :red:`Unsupported`       :red:`Unsupported`
 =======   =====================   ======================   =================================
 
 **stable**
